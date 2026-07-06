@@ -12,6 +12,15 @@ export type Dictionary = {
   heroRating: string;
   heroStats: { value: string; label: string }[];
   mockupTabTitle: string;
+  panelSubtitle: string;
+  panelStatus: string;
+  panelStatusSub: string;
+  panelLangOriginalLabel: string;
+  panelLangTargetLabel: string;
+  panelLangOriginal: string;
+  panelLangTarget: string;
+  panelStop: string;
+  panelFooter: string;
   howKicker: string;
   howTitle: string;
   steps: { n: string; title: string; desc: string }[];
@@ -72,6 +81,15 @@ export const CONTENT: Record<Locale, Dictionary> = {
       { value: "MV3", label: "Manifest V3" },
     ],
     mockupTabTitle: "Panel lateral de AuraLang traduciendo audio en tiempo real",
+    panelSubtitle: "Traducción en tiempo real",
+    panelStatus: "Escuchando…",
+    panelStatusSub: "Capturando audio de esta pestaña · Equilibrado",
+    panelLangOriginalLabel: "Idioma original",
+    panelLangTargetLabel: "Idioma de salida",
+    panelLangOriginal: "inglés",
+    panelLangTarget: "español",
+    panelStop: "Detener",
+    panelFooter: "Solo audio de esta pestaña",
     howKicker: "Cómo funciona",
     howTitle: "De la pestaña a tu idioma en cuatro pasos.",
     steps: [
@@ -173,6 +191,15 @@ export const CONTENT: Record<Locale, Dictionary> = {
       { value: "MV3", label: "Manifest V3" },
     ],
     mockupTabTitle: "AuraLang side panel translating tab audio in real time",
+    panelSubtitle: "Real-time translation",
+    panelStatus: "Listening…",
+    panelStatusSub: "Capturing this tab's audio · Balanced",
+    panelLangOriginalLabel: "Source language",
+    panelLangTargetLabel: "Target language",
+    panelLangOriginal: "English",
+    panelLangTarget: "Spanish",
+    panelStop: "Stop",
+    panelFooter: "This tab's audio only",
     howKicker: "How it works",
     howTitle: "From the tab to your language in four steps.",
     steps: [

@@ -7,11 +7,11 @@ export function HowItWorks() {
   const { t } = useLocale();
 
   return (
-    <div className="bg-panel px-12 py-24">
-      <div className="mx-auto max-w-6xl">
-        <div className="mb-14 max-w-[620px]">
+    <div className="bg-panel ">
+      <div className="mx-auto max-w-6xl px-12 py-24">
+        <div className="mb-14">
           <Kicker>{t.howKicker}</Kicker>
-          <h2 className="text-[38px] font-extrabold leading-tight tracking-[-1px]">
+          <h2 className="text-[38px] font-extrabold leading-tight tracking-[-1px] max-w-[620px]">
             {t.howTitle}
           </h2>
         </div>

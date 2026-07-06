@@ -1,0 +1,24 @@
+"use client";
+
+import { useLocale } from "@/lib/i18n/locale-context";
+import { STORE_URL } from "@/lib/i18n/content";
+import { Button } from "@/components/ui/button";
+
+export function Reviews() {
+  const { t } = useLocale();
+
+  return (
+    <div className="bg-ink px-12 py-24 text-background">
+      <div className="mx-auto max-w-3xl text-center">
+        <div className="text-[76px] font-extrabold leading-none tracking-[-2px]">
+          {t.reviewsScore}
+        </div>
+        <div className="my-3.5 text-2xl tracking-[3px] text-accent">★★★★★</div>
+        <p className="mb-7.5 text-base opacity-75">{t.reviewsSubtitle}</p>
+        <Button href={STORE_URL} variant="inverse" className="px-6 py-3.5 text-[15px]">
+          {t.reviewsCta}
+        </Button>
+      </div>
+    </div>
+  );
+}

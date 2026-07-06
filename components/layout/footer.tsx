@@ -4,13 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { useLocale } from "@/lib/i18n/locale-context";
 import { CONTACT_EMAIL, REPO_URL, STORE_URL } from "@/lib/i18n/content";
+import Container from "@/components/layout/container";
 
 export function Footer() {
   const { t } = useLocale();
 
   return (
-    <div className="border-t border-hairline p-12">
-      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-5">
+    <Container className="border-t border-hairline p-12">
+      <div className="flex max-w-6xl flex-wrap items-center justify-between gap-5">
         <div className="flex items-center gap-2.5">
           <Image
             src="/auralang-icon.png"
@@ -47,6 +48,6 @@ export function Footer() {
         </div>
         <div className="text-[13px] text-ink-faint">{t.footerNote}</div>
       </div>
-    </div>
+    </Container>
   );
 }

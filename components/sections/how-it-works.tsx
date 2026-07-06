@@ -2,13 +2,14 @@
 
 import { useLocale } from "@/lib/i18n/locale-context";
 import { Kicker } from "@/components/ui/kicker";
+import Container from "@/components/layout/container";
 
 export function HowItWorks() {
   const { t } = useLocale();
 
   return (
-    <div className="bg-panel ">
-      <div className="mx-auto max-w-6xl px-12 py-24">
+    <div className="bg-panel">
+   <Container>
         <div className="mb-14">
           <Kicker>{t.howKicker}</Kicker>
           <h2 className="text-[38px] font-extrabold leading-tight tracking-[-1px] max-w-[620px]">
@@ -28,7 +29,7 @@ export function HowItWorks() {
             </div>
           ))}
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

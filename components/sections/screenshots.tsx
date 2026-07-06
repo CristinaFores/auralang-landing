@@ -3,12 +3,13 @@
 import Image from "next/image";
 import { useLocale } from "@/lib/i18n/locale-context";
 import { Kicker } from "@/components/ui/kicker";
+import Container from "../layout/container";
 
 export function Screenshots() {
   const { t } = useLocale();
 
   return (
-    <div className="mx-auto max-w-6xl px-12 py-24">
+    <Container>
       <div className="mb-12 max-w-[620px]">
         <Kicker>{t.shotsKicker}</Kicker>
         <h2 className="mb-3.5 text-[38px] font-extrabold leading-tight tracking-[-1px]">
@@ -38,6 +39,6 @@ export function Screenshots() {
           </figure>
         ))}
       </div>
-    </div>
+    </Container>
   );
 }

@@ -9,11 +9,6 @@ import { Privacy } from "@/components/sections/privacy";
 import { Reviews } from "@/components/sections/reviews";
 import { Faq } from "@/components/sections/faq";
 import { FinalCta } from "@/components/sections/final-cta";
-import { cn } from "@/lib/cn";
-
-export const Container = ({ children , className }: { children: React.ReactNode, className?: string }) => {
-  return <div className={cn("mx-auto max-w-6xl px-12 py-24", className)}>{children}</div>;
-};
 
 export default function Home() {
   return (

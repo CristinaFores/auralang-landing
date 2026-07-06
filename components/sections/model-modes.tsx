@@ -2,13 +2,14 @@
 
 import { useLocale } from "@/lib/i18n/locale-context";
 import { Kicker } from "@/components/ui/kicker";
+import Container from "@/components/layout/container";
 
 export function ModelModes() {
   const { t } = useLocale();
 
   return (
-    <div className="bg-panel px-12 py-24">
-      <div className="mx-auto max-w-6xl">
+    <div className="bg-panel">
+      <Container>
         <div className="mb-12 max-w-[620px]">
           <Kicker>{t.modesKicker}</Kicker>
           <h2 className="mb-3.5 text-[38px] font-extrabold leading-tight tracking-[-1px]">
@@ -35,7 +36,7 @@ export function ModelModes() {
             </div>
           ))}
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

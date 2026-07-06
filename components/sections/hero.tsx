@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useLocale } from "@/lib/i18n/locale-context";
 import { STORE_URL } from "@/lib/i18n/content";
@@ -35,70 +36,23 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="relative">
-        <div className="absolute -inset-7 -rotate-2 rounded-[32px] bg-accent-soft" />
-        <div className="relative overflow-hidden rounded-[22px] border border-hairline bg-white shadow-[0_30px_70px_-25px_rgba(0,0,0,0.25)]">
-          <div className="flex items-center gap-2 border-b border-hairline px-4.5 py-3.5">
-            <div className="h-[9px] w-[9px] rounded-full bg-hairline" />
-            <div className="h-[9px] w-[9px] rounded-full bg-hairline" />
-            <div className="h-[9px] w-[9px] rounded-full bg-hairline" />
-            <span className="ml-2 text-xs text-ink-soft">{t.mockupTabTitle}</span>
-          </div>
-          <div className="flex flex-col gap-4 p-5.5">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2.5">
-                <div className="relative h-3.5 w-3.5">
-                  <motion.div
-                    className="absolute inset-0 rounded-full bg-accent"
-                    animate={{ scale: [1, 1.35, 1], opacity: [0.55, 0.15, 0.55] }}
-                    transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
-                  />
-                  <div className="absolute inset-[3px] rounded-full bg-accent" />
-                </div>
-                <span className="text-sm font-semibold">{t.mockupStatus}</span>
-              </div>
-              <div className="flex h-5 items-end gap-[3px]">
-                {[0, 0.15, 0.3, 0.45].map((delay) => (
-                  <motion.div
-                    key={delay}
-                    className="w-[3px] rounded-sm bg-accent"
-                    animate={{ height: ["20%", "100%", "20%"] }}
-                    transition={{
-                      duration: 0.9,
-                      repeat: Infinity,
-                      ease: "easeInOut",
-                      delay,
-                    }}
-                  />
-                ))}
-              </div>
-            </div>
-            <div className="flex gap-2.5">
-              <div className="flex-1 rounded-[10px] bg-panel-soft px-3 py-2.5 text-xs text-ink-soft">
-                {t.mockupLangFrom}
-              </div>
-              <div className="flex-1 rounded-[10px] bg-panel-soft px-3 py-2.5 text-xs text-ink-soft">
-                {t.mockupLangTo}
-              </div>
-            </div>
-            <div className="flex flex-col gap-2.5 rounded-xl bg-panel-soft p-4">
-              <div>
-                <div className="mb-1 text-[11px] uppercase tracking-[0.5px] text-ink-faint">
-                  {t.mockupOriginalLabel}
-                </div>
-                <div className="text-sm text-ink-soft">{t.mockupOriginalLine}</div>
-              </div>
-              <div className="h-px bg-hairline" />
-              <div>
-                <div className="mb-1 text-[11px] uppercase tracking-[0.5px] text-accent-dark">
-                  {t.mockupTranslatedLabel}
-                </div>
-                <div className="inline rounded bg-accent-soft px-1 py-0.5 text-[15px] font-semibold [box-decoration-break:clone]">
-                  {t.mockupTranslatedLine}
-                </div>
-              </div>
-            </div>
-          </div>
+      <div className="flex justify-center md:justify-end">
+        <div className="relative w-full max-w-[300px]">
+          <div className="absolute -inset-6 -rotate-2 rounded-[36px] bg-accent-soft" />
+          <motion.div
+            className="relative"
+            animate={{ y: [0, -10, 0] }}
+            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <Image
+              src="/screenshots/panel-dark-listening.png"
+              alt={t.mockupTabTitle}
+              width={256}
+              height={650}
+              priority
+              className="w-full rounded-2xl border border-hairline shadow-[0_40px_80px_-30px_rgba(11,16,32,0.5)]"
+            />
+          </motion.div>
         </div>
       </div>
     </div>

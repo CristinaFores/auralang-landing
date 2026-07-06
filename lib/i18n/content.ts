@@ -12,13 +12,6 @@ export type Dictionary = {
   heroRating: string;
   heroStats: { value: string; label: string }[];
   mockupTabTitle: string;
-  mockupStatus: string;
-  mockupLangFrom: string;
-  mockupLangTo: string;
-  mockupOriginalLabel: string;
-  mockupOriginalLine: string;
-  mockupTranslatedLabel: string;
-  mockupTranslatedLine: string;
   howKicker: string;
   howTitle: string;
   steps: { n: string; title: string; desc: string }[];
@@ -68,9 +61,9 @@ export const CONTENT: Record<Locale, Dictionary> = {
     langSwitchLabel: "EN",
     navCta: "Añadir a Chrome",
     heroKicker: "Extensión de Chrome · Manifest V3",
-    heroTitle: "Deja de leer subtítulos. Empieza a escuchar tu idioma.",
+    heroTitle: "Escucha cualquier pestaña en tu idioma.",
     heroSubtitle:
-      "AuraLang traduce en tiempo real el audio de cualquier pestaña y te lo lee en voz alta. Transcripción local con Whisper — sin API key, sin cuenta.",
+      "Traducción de audio en tiempo real. Transcripción local con Whisper — sin cuenta, sin API key.",
     heroCtaPrimary: "Añadir a Chrome — Gratis",
     heroRating: "5,0 · 1 valoración",
     heroStats: [
@@ -78,14 +71,7 @@ export const CONTENT: Record<Locale, Dictionary> = {
       { value: "Local", label: "Transcripción on-device" },
       { value: "MV3", label: "Manifest V3" },
     ],
-    mockupTabTitle: "Panel lateral de AuraLang",
-    mockupStatus: "Traduciendo…",
-    mockupLangFrom: "Origen: Inglés",
-    mockupLangTo: "Destino: Español",
-    mockupOriginalLabel: "Original",
-    mockupOriginalLine: '"...and that changes everything we know."',
-    mockupTranslatedLabel: "Traducción",
-    mockupTranslatedLine: '"...y eso cambia todo lo que sabemos."',
+    mockupTabTitle: "Panel lateral de AuraLang traduciendo audio en tiempo real",
     howKicker: "Cómo funciona",
     howTitle: "De la pestaña a tu idioma en cuatro pasos.",
     steps: [
@@ -176,9 +162,9 @@ export const CONTENT: Record<Locale, Dictionary> = {
     langSwitchLabel: "ES",
     navCta: "Add to Chrome",
     heroKicker: "Chrome Extension · Manifest V3",
-    heroTitle: "Stop reading subtitles. Start hearing your language.",
+    heroTitle: "Hear any tab in your language.",
     heroSubtitle:
-      "AuraLang translates the audio of any tab in real time and reads it back to you out loud. Local transcription with Whisper — no API key, no account.",
+      "Real-time audio translation. Local Whisper transcription — no account, no API key.",
     heroCtaPrimary: "Add to Chrome — Free",
     heroRating: "5.0 · 1 rating",
     heroStats: [
@@ -186,14 +172,7 @@ export const CONTENT: Record<Locale, Dictionary> = {
       { value: "Local", label: "On-device transcription" },
       { value: "MV3", label: "Manifest V3" },
     ],
-    mockupTabTitle: "AuraLang side panel",
-    mockupStatus: "Translating…",
-    mockupLangFrom: "From: English",
-    mockupLangTo: "To: Spanish",
-    mockupOriginalLabel: "Original",
-    mockupOriginalLine: '"...and that changes everything we know."',
-    mockupTranslatedLabel: "Translation",
-    mockupTranslatedLine: '"...y eso cambia todo lo que sabemos."',
+    mockupTabTitle: "AuraLang side panel translating tab audio in real time",
     howKicker: "How it works",
     howTitle: "From the tab to your language in four steps.",
     steps: [

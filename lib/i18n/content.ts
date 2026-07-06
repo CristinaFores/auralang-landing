@@ -25,7 +25,7 @@ export type Dictionary = {
   shotsKicker: string;
   shotsTitle: string;
   shotsSubtitle: string;
-  shots: { label: string }[];
+  shots: { src: string; label: string }[];
   modesKicker: string;
   modesTitle: string;
   modesSubtitle: string;
@@ -48,6 +48,13 @@ export type Dictionary = {
 };
 
 const STEP_N = ["01", "02", "03", "04"];
+
+const SHOT_SRC = [
+  "/screenshots/panel-light-ready.png",
+  "/screenshots/panel-light-listening.png",
+  "/screenshots/panel-dark-ready.png",
+  "/screenshots/panel-dark-listening.png",
+];
 
 export const STORE_URL =
   "https://chromewebstore.google.com/detail/auralang/pakdegbkjgibdjkpdniabdocffiejolo";
@@ -98,10 +105,11 @@ export const CONTENT: Record<Locale, Dictionary> = {
     shotsSubtitle:
       "El panel lateral muestra el estado, la transcripción en vivo y la traducción hablada — sin salir de la pestaña que estás viendo.",
     shots: [
-      "captura: panel lateral abierto",
-      "captura: transcripción en vivo",
-      "captura: selector de idiomas",
-    ].map((label) => ({ label })),
+      "Tema claro · listo para traducir",
+      "Tema claro · transcripción en vivo",
+      "Tema oscuro · elige tus idiomas",
+      "Tema oscuro · traducción resaltada",
+    ].map((label, i) => ({ src: SHOT_SRC[i], label })),
     modesKicker: "Modos de modelo",
     modesTitle: "Elige la velocidad que necesita tu equipo.",
     modesSubtitle:
@@ -205,10 +213,11 @@ export const CONTENT: Record<Locale, Dictionary> = {
     shotsSubtitle:
       "The side panel shows live status, the running transcript, and the spoken translation — without leaving the tab you're watching.",
     shots: [
-      "screenshot: side panel open",
-      "screenshot: live transcript",
-      "screenshot: language picker",
-    ].map((label) => ({ label })),
+      "Light theme · ready to translate",
+      "Light theme · live transcript",
+      "Dark theme · pick your languages",
+      "Dark theme · highlighted translation",
+    ].map((label, i) => ({ src: SHOT_SRC[i], label })),
     modesKicker: "Model modes",
     modesTitle: "Pick the speed your machine needs.",
     modesSubtitle: "The model downloads once and stays cached for offline use.",

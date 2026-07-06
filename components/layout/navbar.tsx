@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLocale } from "@/lib/i18n/locale-context";
 import { STORE_URL } from "@/lib/i18n/content";
 import { Button } from "@/components/ui/button";
@@ -10,9 +11,14 @@ export function Navbar() {
   return (
     <div className="sticky top-0 z-50 flex items-center justify-between border-b border-hairline bg-background/90 px-12 py-5 backdrop-blur-sm">
       <div className="flex items-center gap-2.5">
-        <div className="flex h-[34px] w-[34px] items-center justify-center rounded-[9px] bg-accent">
-          <div className="h-3 w-3 rounded-full border-[2.5px] border-white" />
-        </div>
+        <Image
+          src="/auralang-icon.png"
+          alt="AuraLang"
+          width={34}
+          height={34}
+          className="rounded-[9px]"
+          priority
+        />
         <span className="text-2xl font-bold tracking-[-0.3px]">AuraLang</span>
       </div>
       <div className="flex items-center gap-4.5">

@@ -19,12 +19,12 @@ export function Hero() {
   const { t } = useLocale();
 
   return (
-    <div className="mx-auto grid max-w-[1320px] grid-cols-1 items-center gap-10 px-12 py-20 md:grid-cols-[1.05fr_0.95fr]">
+    <div className="mx-auto grid max-w-[1320px] grid-cols-1 items-center gap-10 overflow-x-clip px-5 py-14 sm:px-8 sm:py-16 lg:px-12 lg:py-20 md:grid-cols-[1.05fr_0.95fr]">
       <div>
         <div className="mb-6.5 inline-flex items-center gap-2 rounded-full bg-accent-soft px-3.5 py-1.5 text-[13px] font-semibold text-accent-dark">
           <span>{t.heroKicker}</span>
         </div>
-        <h1 className="mb-6 text-5xl font-extrabold leading-[1.08] tracking-[-1.5px] md:text-[58px]">
+        <h1 className="mb-6 text-[38px] font-extrabold leading-[1.08] tracking-[-1px] sm:text-5xl sm:tracking-[-1.5px] md:text-[58px]">
           {t.heroTitle}
         </h1>
         <p className="mb-9 max-w-[520px] text-lg leading-relaxed text-ink-soft">

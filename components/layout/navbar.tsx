@@ -28,7 +28,11 @@ export function Navbar() {
         >
           {t.langSwitchLabel}
         </button>
-        <Button href={STORE_URL} variant="dark" className="whitespace-nowrap px-3.5 py-2.5 text-sm sm:px-5">
+        <Button
+          href={STORE_URL}
+          variant="dark"
+          className="hidden whitespace-nowrap px-3.5 py-2.5 text-sm sm:inline-flex sm:px-5"
+        >
           {t.navCta}
         </Button>
       </div>

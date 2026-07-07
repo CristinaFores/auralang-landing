@@ -8,7 +8,7 @@ export function Reviews() {
   const { t } = useLocale();
 
   return (
-    <div className="bg-ink px-5 py-16 text-background sm:px-8 sm:py-20 lg:px-12 lg:py-24">
+    <div className="bg-ink px-5 py-20 text-background sm:px-8 sm:py-24 lg:px-12 lg:py-28">
       <div className="mx-auto max-w-3xl text-center">
         <div className="text-[56px] font-extrabold leading-none tracking-[-2px] sm:text-[76px]">
           {t.reviewsScore}

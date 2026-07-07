@@ -8,7 +8,7 @@ export function FinalCta() {
   const { t } = useLocale();
 
   return (
-    <div className="bg-accent-soft px-5 py-20 text-center sm:px-8 sm:py-24 lg:px-12 lg:py-[100px]">
+    <div className="bg-accent-soft px-5 py-24 text-center sm:px-8 sm:py-28 lg:px-12 lg:py-32">
       <h2 className="mx-auto mb-6 max-w-[700px] text-[30px] font-extrabold leading-tight tracking-[-1px] sm:text-[42px]">
         {t.finalTitle}
       </h2>

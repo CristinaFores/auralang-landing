@@ -72,8 +72,8 @@ export const CONTENT: Record<Locale, Dictionary> = {
     heroKicker: "Extensión de Chrome · Manifest V3",
     heroTitle: "Escucha cualquier pestaña en tu idioma.",
     heroSubtitle:
-      "Traducción de audio en tiempo real. Transcripción local con Whisper — sin cuenta, sin API key.",
-    heroCtaPrimary: "Añadir a Chrome — Gratis",
+      "Traducción de audio en tiempo real. Transcripción local con Whisper.",
+    heroCtaPrimary: "Añadir a Chrome",
     heroRating: "5,0 · 1 valoración",
     heroStats: [
       { value: "0€", label: "Gratis, sin cuenta" },
@@ -182,8 +182,8 @@ export const CONTENT: Record<Locale, Dictionary> = {
     heroKicker: "Chrome Extension · Manifest V3",
     heroTitle: "Hear any tab in your language.",
     heroSubtitle:
-      "Real-time audio translation. Local Whisper transcription — no account, no API key.",
-    heroCtaPrimary: "Add to Chrome — Free",
+      "Real-time audio translation. Local Whisper transcription.",
+    heroCtaPrimary: "Add to Chrome",
     heroRating: "5.0 · 1 rating",
     heroStats: [
       { value: "$0", label: "Free, no account" },

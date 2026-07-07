@@ -8,9 +8,9 @@ export function Reviews() {
   const { t } = useLocale();
 
   return (
-    <div className="bg-ink px-12 py-24 text-background">
+    <div className="bg-ink px-5 py-20 text-background sm:px-8 sm:py-24 lg:px-12 lg:py-28">
       <div className="mx-auto max-w-3xl text-center">
-        <div className="text-[76px] font-extrabold leading-none tracking-[-2px]">
+        <div className="text-[56px] font-extrabold leading-none tracking-[-2px] sm:text-[76px]">
           {t.reviewsScore}
         </div>
         <div className="my-3.5 text-2xl tracking-[3px] text-accent">★★★★★</div>

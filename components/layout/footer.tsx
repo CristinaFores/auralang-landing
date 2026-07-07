@@ -10,8 +10,8 @@ export function Footer() {
   const { t } = useLocale();
 
   return (
-    <Container className="border-t border-hairline p-12">
-      <div className="flex max-w-6xl flex-wrap items-center justify-between gap-5">
+    <Container className="border-t border-hairline py-12">
+      <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between md:gap-5">
         <div className="flex items-center gap-2.5">
           <Image
             src="/auralang-icon.png"
@@ -22,7 +22,7 @@ export function Footer() {
           />
           <span className="text-[19px] font-bold">AuraLang</span>
         </div>
-        <div className="flex flex-wrap gap-6 text-sm">
+        <div className="flex flex-col gap-4 text-sm sm:flex-row sm:flex-wrap sm:gap-x-6 sm:gap-y-3">
           <Link
             href={REPO_URL}
             target="_blank"
@@ -46,7 +46,7 @@ export function Footer() {
             Chrome Web Store
           </Link>
         </div>
-        <div className="text-[13px] text-ink-faint">{t.footerNote}</div>
+        <div className="text-[13px] leading-relaxed text-ink-faint">{t.footerNote}</div>
       </div>
     </Container>
   );
